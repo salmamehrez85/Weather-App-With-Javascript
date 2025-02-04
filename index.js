@@ -5,7 +5,7 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 search.addEventListener("click", () => {
-  const APIKey = "Your Api Key";
+  const APIKey = "c64288af36a00549be4a50f7c9bb27c6";
   const city = document.querySelector(".search-box input").value;
 
   if (city === "") return;
@@ -57,7 +57,7 @@ search.addEventListener("click", () => {
           break;
 
         default:
-          image.src = "";
+          image.src = "images/mist.png";
       }
 
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
